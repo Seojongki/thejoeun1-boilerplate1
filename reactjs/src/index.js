@@ -7,7 +7,8 @@ import { BrowserRouter} from 'react-router-dom'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <BrowserRouter basename='/thejoeun1-boilerplate1'>
+    // <BrowserRouter basename='/thejoeun1-boilerplate1'>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
         <App />
     </BrowserRouter>  
 );
