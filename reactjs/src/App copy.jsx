@@ -9,7 +9,6 @@ import Layout from './layout/Layout'
 import { useCookies } from 'react-cookie';
 
 
-
 function App() {
   const navigate = useNavigate();
 
@@ -18,8 +17,8 @@ function App() {
   let isLogin = false;    
   if (cookies.token){
       isLogin = true;
+  }
 
-}
 
 
 

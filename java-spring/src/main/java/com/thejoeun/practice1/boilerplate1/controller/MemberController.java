@@ -20,8 +20,8 @@ public class MemberController {
         MemberResponseDto myInfoBySecurity = memberService.getMyInfoBySecurity();
         System.out.println(myInfoBySecurity.getNickname());
 
+        // return ResponseEntity.ok(memberService.getMyInfoB
         return ResponseEntity.ok((myInfoBySecurity));
-        // return ResponseEntity.ok(memberService.getMyInfoBySecurity());
     }
 
 //    @PostMapping("/nickname")
