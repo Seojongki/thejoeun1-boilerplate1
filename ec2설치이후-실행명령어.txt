@@ -1,0 +1,19 @@
+1. jdk 17 -> sudo yum install java-17-amazon-corretto
+2. mysql or mariadb -> sudo yum install mariadb105-server.x86_64
+sudo systemctl start mariadb
+sudo systemctl stop mariadb
+ps -ef | grep mariadb
+telnet  ec2-3-39-234-162.ap-northeast-2.compute.amazonaws.com 3306
+sudo mysqladmin -u root -p password -> 패스워드 설정
+mysql -u root -p -> mariadb 서버에 진입
+create database mydb;	-> mydb데이터베이스 생성
+use mydb;		-> mydb데이터베이스로 진입
+use mysql;		-> mysql데이터베이스로 진입
+// 외부접속 가능 명령어들
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY '1234';
+FLUSH PRIVILEGES;
+3. git (옵션)
+4. nginx(옵션)
+5. tomcat (XXX)
+
+yum list | grep mariadb

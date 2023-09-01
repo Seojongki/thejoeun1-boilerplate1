@@ -1,0 +1,20 @@
+1. Cookie(persistance, session)
+  - Name, Value, Expires 등의 항목이 존재
+  - 서버와 Broswer에서 handling이 가능
+  - 유효기간이 존재
+  - 크롬기준 개수 150개, 용량 4kb(4096byte)만까지만 사용이 가능
+ 
+2. Browser Storage(Local, Session)
+  - Name(Key), Value 항목만 존재
+  - Broswer에서만 가능
+  - 유효기간이 없음(Local만)
+  - 4kb이상 사용이 가능
+
+  Local, Session차이점
+  Local: browser의 모든 tab에서 사용이 가능
+           browser가 꺼져도 계속 데이터가 남아있음
+  Session: browser의 본인 tab에서만 사용이 가능
+           tab혹은 browser가 종료되면 데이터가 사라짐
+
+
+javascipt 함수: setTimeout, setInterval, clearTimeout
